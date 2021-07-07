@@ -1,0 +1,78 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1,h2,h3,h4,h5{
+	font-family:'Farro', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+}
+h1,h2{
+	font-size:30px;
+}
+h3{
+	font-size: 25px;
+}
+h4{
+	font-size: 15px;
+}
+p{
+	font-family:'Farro', sans-serif;
+	font-weight: lighter;
+	font-size: 20px;
+}
+a{
+	text-decoration: none;
+	font-size: 15px;
+	color: #fff;
+	font-family:'Farro', sans-serif;
+}
+a:hover{
+	text-decoration: none;
+	color:currentColor;
+}
+span{
+	font-family:'Farro', sans-serif;
+	font-weight: bold;
+}
+iframe{
+	margin:30px 20px;
+	filter: drop-shadow(4px 4px 2px #000);
+}
+.boton{
+	width: auto;
+	font-family:'Farro', sans-serif;
+	border-radius: 10px;
+	text-transform:uppercase;
+	background-color:#000;
+	border: 2px solid #ff4700;
+	padding: 5px;
+	filter: drop-shadow(4px 4px 3px #000);
+}
+	/*icono whatsapp fixed*/
+.whatsapp{
+	position: fixed;
+	width: 60px;
+	right: 10px;
+	bottom: 10px;
+ 	filter: drop-shadow(4px 4px 5px #000);
+ 	z-index: 10;
+}	
+.p-top{
+	padding-top: 5rem;
+}
+/*------- ANIMACIONES------ */
+
+@keyframes menu {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
