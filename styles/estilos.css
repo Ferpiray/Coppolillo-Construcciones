@@ -105,6 +105,14 @@ iframe {
   }
 }
 
+.logo {
+  max-width: 150px;
+}
+
+button:focus {
+  outline: none;
+}
+
 footer {
   color: #fff;
   text-align: center;

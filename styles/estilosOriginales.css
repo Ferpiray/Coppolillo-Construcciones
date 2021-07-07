@@ -31,16 +31,6 @@ header{
 	position: fixed;
 	right: 0;
 	left:0;
-	max-width: 120rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
-	padding: 3px 20px 3px 20px;
-	/*box-shadow: 0px 3px 5px black;*/
-}
-nav ul{
-	display: none;
 }
 .logo{
 	max-width: 150px;
@@ -157,10 +147,6 @@ a.dropdown-item:hover{
 	font-size: 40px;
 	max-width: 400px;
 }
-/* .dropdown-menu{
-	background-image: url(../media/fondo2.jpg);
-	background-position: center;
-} */
 .dropdown-item{
 	width: auto;
 	font-size:2rem;
@@ -192,33 +178,13 @@ header{
 	background-color:#ececece0; 	
 	position: fixed;
 	right: 0;
-	left:0;
-	max-width: 120rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
-	padding: 3px 20px 0 20px;
-	/*box-shadow: 0px 3px 5px black;*/
+	left:0;	
 }
-nav a:hover{
-	color:black;
-}
+
 .encabezado{
 	padding: 0;
 }
 
-nav ul{
-	display: flex;
-	flex-direction: row;
-	background: linear-gradient(to bottom, #e7711b , #ff4700);	border-radius: 20px;
-	filter: drop-shadow(4px 4px 3px #000);
-}
-nav li{
-	justify-content: space-between;
-	list-style-type: none;
-	margin: 10px 15px;
-}
 .oficinaVirtual{
 	display: inherit;
 }
@@ -345,9 +311,9 @@ ul li.servicio{
 	width: 100%;
 	height: auto;
 }
-nav li{
+/* nav li{
 	margin: 10px 30px;
-}
+} */
 .grilla-ov{
 	grid-template-rows: none;
 	grid-template-columns: repeat(2, 1fr);
