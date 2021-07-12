@@ -5,12 +5,15 @@
 }
 h1,h2,h3,h4,h5{
 	font-family:'Farro', sans-serif;
-	text-transform: uppercase;
 	text-align: center;
 	margin: 0;
 }
 h1,h2{
 	font-size:30px;
+}
+h2{
+	text-transform: uppercase;
+	
 }
 h3{
 	font-size: 25px;

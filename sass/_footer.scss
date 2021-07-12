@@ -1,5 +1,5 @@
 footer{
-	    color: #fff;
+	    color: #d8511e;
 	    text-align: center;
         background-color: #000;
         ul{
@@ -33,9 +33,11 @@ footer{
             border-top: solid 0.5px #fff;
             span{
                 display: block;
+                color: #fff;
                 @media all and (min-width: 768px){
                     display: inline;
                     margin: 2px;
+                    color:#d8511e;
                 } 
             }
         }

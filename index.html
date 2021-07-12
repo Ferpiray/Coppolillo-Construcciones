@@ -14,10 +14,9 @@
  	<link rel="icon" type="image/png" href="media/boton-menu.png" sizes="16x16">
 </head>
 <body>
-
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light py-0 my-0">
-			<a class="navbar-brand" href="#"> <img class="logo" src="media/logo2.png" alt="logo"> </a>
+		<nav id="menu" class="navbar navbar-expand-lg navbar-light py-0 my-0">
+			<a class="navbar-brand" href="index.html"> <img class="logo" src="media/logo2.png" alt="logo"></a>
 			<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>
@@ -43,28 +42,28 @@
 			</div>
 		</nav>
 	</header>
-
-	<div class="contenedorPrincipal">
-		<video class="contenedorPrincipal__video" muted autoplay loop="">
-			<source src="media/video.mp4" type="video/mp4">
-    		<source src="media/video.webm"type="video/webm">
-		</video>
-		<video class="contenedorPrincipal__videoMobile" src="media/video-mobile.mp4" muted autoplay loop="">
-			<source src="media/video-mobile.mp4" type="video/mp4">
-    		<source src="media/video-mobile.webm"type="video/webm">
-		</video>
+	
+	<div class="parallax container-fluid encabezado-home">
+		<p>Soluciones en</p>
+		<div class="encabezado-titulo">
+		  	<h1 class="h1-home">
+				gas<br /> 
+				agua<br />
+				cloacas<br />
+				suelos<br />
+				planos
+		 	</h1>
+		</div>	
+	</div>
+		
+	<h2 class="parallax-titulo">Estamos en La Plata. Buscanos!</h2>
+	
+	<div class="parallax-mapa container-fluid">
+		<iframe title="ubicacion_mapa" class="mapaIframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13089.629340372621!2d-57.974298000000005!3d-34.896226!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e36a2f77bf01a42!2sCoppolillo%20Construcciones!5e0!3m2!1ses-419!2sar!4v1623000828825!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 	</div>
 
 	<a href="https://wa.link/441umh" target="_blank" rel="noopener"><img class="whatsapp" src="media/whatsapp.png" alt="whatsapp"></a>
 
-	<div class="mapa" id="dondeEstamos">
-		<h1>Más de 25 años de experiencia en redes de gas ,agua y cloacas. <span> Estamos en La Plata, buscanos!</span></h1>
-		<div class="ubicacion">
-			<div>
-				<iframe title="ubicacion_mapa" class="mapaIframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13089.629340372621!2d-57.974298000000005!3d-34.896226!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e36a2f77bf01a42!2sCoppolillo%20Construcciones!5e0!3m2!1ses-419!2sar!4v1623000828825!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-			</div>
-		</div>
-	</div>
 	
 	<footer>
 		<div class="redesSociales">
@@ -85,6 +84,7 @@
 					<li><a href="pages/servicios.html">Servicios</a></li>						
 					<li><a href="pages/nosotros.html">Sobre nosotros</a></li>	
 					<li><a href="pages/contacto.html">Contacto</a></li>	
+					<li><a href="pages/oficina_virtual.html">Oficina Virtual</a></li>	
 				</ul>
 			</div>
 		</div>
@@ -94,5 +94,14 @@
 <script src="Bootstrap/js/jquery.slim.min.js"></script>
 <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
 
+<script>
+	$(window).scroll(function(){
+		if ($("#menu").offset().top > 60) {
+			$("#menu").addClass("navbar-oscuro");
+		} else{
+			$("#menu").removeClass("navbar-oscuro");
+		}
+	});
+</script>
 </body>
 </html>
