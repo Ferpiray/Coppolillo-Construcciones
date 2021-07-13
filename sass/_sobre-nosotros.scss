@@ -1,1 +1,29 @@
 //página sobre nosotros
+.nosotros{
+            min-height: 100vh;
+            background-image: url(../media/obra.jpg);   
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 8rem;
+            padding-bottom: 2rem;
+            h1,h2,h3{
+                font-size: 20px;
+                color:#fff;
+            }
+            .back{
+                background-color: rgba(0, 0, 0, 0.74);
+                border-radius: 10px;
+            }
+            p{
+                font-size: 14px;
+                color:#fff;
+                font-weight: 700;
+                span{
+                    color:#d8511e;
+                } 
+                @media(min-width:768px){
+                    font-size: 20px;
+                }
+            }
+          
+}

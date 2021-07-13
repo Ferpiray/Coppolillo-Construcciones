@@ -231,6 +231,41 @@ footer img {
   }
 }
 
+.nosotros {
+  min-height: 100vh;
+  background-image: url(../media/obra.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+
+.nosotros h1, .nosotros h2, .nosotros h3 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.nosotros .back {
+  background-color: rgba(0, 0, 0, 0.74);
+  border-radius: 10px;
+}
+
+.nosotros p {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.nosotros p span {
+  color: #d8511e;
+}
+
+@media (min-width: 768px) {
+  .nosotros p {
+    font-size: 20px;
+  }
+}
+
 .encabezado-home {
   padding: 6rem 1rem 1rem 1rem;
   font: normal 40px/50px 'Farro', sans-serif;
@@ -270,13 +305,13 @@ footer img {
   white-space: nowrap;
   top: 0;
   left: 0;
-  /*animation*/
+  /*animacion*/
   -webkit-animation: move 6.5s;
   animation: move 6.5s;
-  /*animation-iteration-count*/
+  /*animacion-iteracion*/
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  /*animation-delay*/
+  /*animacion-delay*/
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
