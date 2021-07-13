@@ -1,11 +1,11 @@
 footer{
 	    color: #d8511e;
 	    text-align: center;
-        background-color: #000;
+        background-color: $negro;
         ul{
             display: flex;
             flex-direction: column;	
-            border-top: dashed 1px #fff;
+            border-top: dashed 1px $blanco;
             margin: 0 auto;
             @media all and (min-width: 768px) {
                 border:none;
@@ -30,10 +30,10 @@ footer{
             font-size: 15px;
             text-transform: uppercase;
             padding:5px;
-            border-top: solid 0.5px #fff;
+            border-top: solid 0.5px $blanco;
             span{
                 display: block;
-                color: #fff;
+                color: $blanco;
                 @media all and (min-width: 768px){
                     display: inline;
                     margin: 2px;

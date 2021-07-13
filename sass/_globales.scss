@@ -1,10 +1,21 @@
+//PALETA DE COLORES
+$naranja: #d8511e;
+$gris: #ececec;
+$blanco: #fff;
+$negro: #000;
+
+// FUENTES
+$fuente-principal: 'Farro', sans-serif;
+
+
+// GLOBALES
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 h1,h2,h3,h4,h5{
-	font-family:'Farro', sans-serif;
+	font-family:$fuente-principal;
 	text-align: center;
 	margin: 0;
 }

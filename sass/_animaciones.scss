@@ -3,7 +3,7 @@
 .encabezado-home {
     padding: 6rem 1rem 1rem 1rem;
     font: normal 40px/50px 'Farro', sans-serif;
-    color: #fff;
+    color: $blanco;
     background-color: #000;
     display: flex;
     justify-content: center;
@@ -92,7 +92,7 @@
   
   //ANIMACION NAVBAR
   .navbar-oscuro{
-    background-color:#fff;
+    background-color:$blanco;
   }
   #menu{
     transition: background-color 0.5s ease;
