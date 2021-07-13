@@ -1,1 +1,28 @@
 //página contacto
+form input ,textarea ,label, select{
+	width: 400px;
+	margin: 20px auto;
+	display: block;
+	font-family:'Farro', sans-serif;
+	transition: all 0.5s;
+}
+.datosFormulario:focus{
+	width: 500px
+}
+
+.formulario{
+	width: 600px; 
+	margin: 20px auto;
+	border: 2px solid;
+	font-family:'Farro', sans-serif;
+	background-color: rgba(255,255,255,0.6);
+    h3{
+        font-size: 20px;}
+}
+.botonesFormulario{
+	display: flex;
+
+}
+.botonFormulario{
+	width:150px;
+}

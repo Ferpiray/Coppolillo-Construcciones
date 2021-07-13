@@ -27,3 +27,16 @@
             }
           
 }
+.info{
+	display: grid;
+    p{
+	padding: 20px;
+    }
+    div{
+	margin: 30px auto;
+	width: 1400px;
+	border: 2px solid;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 15px 15px;
+}
+}
