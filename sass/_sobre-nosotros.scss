@@ -17,26 +17,12 @@
             p{
                 font-size: 14px;
                 color:$blanco;
-                font-weight: 700;
                 span{
-                    color:#d8511e;
+                    color:$naranja;
                 } 
                 @media(min-width:768px){
-                    font-size: 20px;
+                    font-size: 18px;
                 }
             }
           
-}
-.info{
-	display: grid;
-    p{
-	padding: 20px;
-    }
-    div{
-	margin: 30px auto;
-	width: 1400px;
-	border: 2px solid;
-	background-color: rgba(255,255,255,0.6);
-	border-radius: 15px 15px;
-}
 }

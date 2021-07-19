@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(estilosOriginales.css);
+@import url(../Bootstrap/css/bootstrap.min.css);
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +30,7 @@ h4 {
 }
 
 p {
-  font-family: 'Farro', sans-serif;
+  font-family: "Farro", sans-serif;
   font-weight: lighter;
   font-size: 20px;
 }
@@ -39,7 +39,7 @@ a {
   text-decoration: none;
   font-size: 15px;
   color: #fff;
-  font-family: 'Farro', sans-serif;
+  font-family: "Farro", sans-serif;
 }
 
 a:hover {
@@ -48,26 +48,14 @@ a:hover {
 }
 
 span {
-  font-family: 'Farro', sans-serif;
+  font-family: "Farro", sans-serif;
   font-weight: bold;
 }
 
 iframe {
   margin: 30px 20px;
-  -webkit-filter: drop-shadow(4px 4px 2px #000);
-          filter: drop-shadow(4px 4px 2px #000);
-}
-
-.boton {
-  width: auto;
-  font-family: 'Farro', sans-serif;
-  border-radius: 10px;
-  text-transform: uppercase;
-  background-color: #000;
-  border: 2px solid #ff4700;
-  padding: 5px;
-  -webkit-filter: drop-shadow(4px 4px 3px #000);
-          filter: drop-shadow(4px 4px 3px #000);
+  -webkit-filter: drop-shadow(6px 6px 3px #000);
+          filter: drop-shadow(6px 6px 3px #000);
 }
 
 /*icono whatsapp fixed*/
@@ -109,24 +97,33 @@ iframe {
   }
 }
 
+header {
+  z-index: 10;
+  background-color: #ececec;
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+
 .logo {
-  max-width: 150px;
+  max-width: 160px;
+  margin: 0 auto;
 }
 
 button:focus {
   outline: none;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: #000;
+.nav-link {
+  color: #000 !important;
 }
 
-.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-  color: #d8511e;
+.item-activo {
+  color: #d8511e !important;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-  color: orangered;
+.nav-link:hover {
+  color: #d8511e !important;
 }
 
 .card-title {
@@ -152,14 +149,23 @@ button:focus {
           box-shadow: none;
 }
 
+#header-home {
+  background: #e5ecf4;
+}
+
+@media all and (min-width: 1000px) {
+  #header-home {
+    background: transparent;
+  }
+}
+
 .parallax {
   width: 100%;
   height: 100vh;
-  background-image: url(../media/maquina-jcb.jpg);
+  background-image: url(../media/maquina-jcb-mobile.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,11 +177,18 @@ button:focus {
           align-items: flex-start;
 }
 
+@media all and (min-width: 768px) {
+  .parallax {
+    background-image: url(../media/maquina-jcb.jpg);
+    background-position: center;
+  }
+}
+
 .parallax-mapa {
   width: 100%;
   height: 450px;
-  background-image: url(../media/oficina.jpg);
-  background-position: right;
+  background-image: url(../media/oficina-mobile.jpg);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -190,17 +203,10 @@ button:focus {
           align-items: center;
 }
 
-.parallax-h1 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #000;
-  padding: 10px;
-  text-transform: initial;
-  border-radius: 10px;
-  margin-top: 120px;
-  -webkit-box-shadow: 2px 2px 2px 2px black;
-          box-shadow: 2px 2px 2px 2px black;
-  background-color: #d8511e;
+@media all and (min-width: 768px) {
+  .parallax-mapa {
+    background-image: url(../media/oficina.jpg);
+  }
 }
 
 .parallax-titulo {
@@ -212,20 +218,25 @@ button:focus {
   text-transform: initial;
 }
 
-/*Seccion mapa*/
-.direccion {
-  margin-bottom: 20px;
-}
-
 .mapaIframe {
   width: 300px;
-  height: 200px;
+  height: 350px;
+  padding: 0.3rem;
+  background-color: #ececec;
+  border-radius: 10px;
 }
 
 @media all and (min-width: 480px) {
   .mapaIframe {
-    width: 400px;
-    height: 300px;
+    width: 350px;
+    height: 400px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .mapaIframe {
+    width: 500px;
+    height: 400px;
   }
 }
 
@@ -245,7 +256,6 @@ footer ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-top: dashed 1px #fff;
   margin: 0 auto;
 }
 
@@ -283,33 +293,34 @@ footer li {
 }
 
 footer p {
+  color: #ececec;
   margin: 0 auto;
-  font-size: 15px;
-  text-transform: uppercase;
+  font-size: 12px;
   padding: 5px;
-  border-top: solid 0.5px #fff;
-}
-
-footer p span {
-  display: block;
-  color: #fff;
+  border-top: 1px solid #fff;
 }
 
 @media all and (min-width: 768px) {
-  footer p span {
-    display: inline;
-    margin: 2px;
-    color: #d8511e;
+  footer p {
+    font-size: 15px;
   }
 }
 
 footer img {
   width: 30px;
   padding-top: 5px;
+  padding-bottom: 5px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+footer img:hover {
+  border-bottom: 0.5px groove #000;
 }
 
 .redesSociales {
   padding: 10px;
+  background-color: #000;
 }
 
 @media all and (min-width: 768px) {
@@ -355,6 +366,66 @@ footer img {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
+.servicio-gas {
+  height: 90vh;
+  background-image: url(../media/gas-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media all and (min-width: 768px) {
+  .servicio-gas {
+    background-image: url(../media/gas.jpg);
+    height: 92vh;
+  }
+}
+
+.servicio-agua {
+  height: 90vh;
+  background-image: url(../media/agua-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media all and (min-width: 768px) {
+  .servicio-agua {
+    background-image: url(../media/agua.jpg);
+    height: 92vh;
+  }
+}
+
+.servicio-cloacas {
+  height: 90vh;
+  background-image: url(../media/cloacas-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media all and (min-width: 768px) {
+  .servicio-cloacas {
+    background-image: url(../media/cloacas.jpg);
+    height: 92vh;
+  }
+}
+
+.servicio-suelos {
+  height: 90vh;
+  background-image: url(../media/suelos-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media all and (min-width: 768px) {
+  .servicio-suelos {
+    background-image: url(../media/suelos.jpg);
+    height: 92vh;
+  }
+}
+
 ul li.servicio {
   line-height: 40px;
   font-family: 'Farro', sans-serif;
@@ -398,7 +469,6 @@ ul li.servicio {
 .nosotros p {
   font-size: 14px;
   color: #fff;
-  font-weight: 700;
 }
 
 .nosotros p span {
@@ -407,67 +477,13 @@ ul li.servicio {
 
 @media (min-width: 768px) {
   .nosotros p {
-    font-size: 20px;
+    font-size: 18px;
   }
-}
-
-.info {
-  display: -ms-grid;
-  display: grid;
-}
-
-.info p {
-  padding: 20px;
-}
-
-.info div {
-  margin: 30px auto;
-  width: 1400px;
-  border: 2px solid;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 15px 15px;
-}
-
-form input, textarea, label, select {
-  width: 400px;
-  margin: 20px auto;
-  display: block;
-  font-family: 'Farro', sans-serif;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.datosFormulario:focus {
-  width: 500px;
-}
-
-.formulario {
-  width: 600px;
-  margin: 20px auto;
-  border: 2px solid;
-  font-family: 'Farro', sans-serif;
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-.formulario h3 {
-  font-size: 20px;
-}
-
-.botonesFormulario {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.botonFormulario {
-  width: 150px;
 }
 
 .encabezado-home {
   padding: 6rem 1rem 1rem 1rem;
-  font: normal 40px/50px 'Farro', sans-serif;
-  color: #fff;
-  background-color: #000;
+  font: 40px/50px "Farro", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,15 +498,6 @@ form input, textarea, label, select {
   float: left;
   margin-right: 0.4em;
   color: #000;
-}
-
-.encabezado-titulo {
-  font-size: 30px;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  height: 50px;
-  top: 0;
 }
 
 .encabezado-home .h1-home {
@@ -567,12 +574,21 @@ form input, textarea, label, select {
   }
 }
 
-.navbar-oscuro {
-  background-color: #fff;
+.encabezado-titulo {
+  font-size: 30px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  top: 0;
+}
+
+.navbar-gris {
+  background-color: #ececec;
 }
 
 #menu {
-  -webkit-transition: background-color 0.5s ease;
-  transition: background-color 0.5s ease;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 /*# sourceMappingURL=estilos.css.map */

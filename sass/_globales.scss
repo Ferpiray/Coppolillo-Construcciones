@@ -1,6 +1,8 @@
 //PALETA DE COLORES
 $naranja: #d8511e;
 $gris: #ececec;
+$gris_oscuro: #1f1c1c;
+$celeste: #e5ecf4;
 $blanco: #fff;
 $negro: #000;
 
@@ -33,45 +35,36 @@ h4{
 	font-size: 15px;
 }
 p{
-	font-family:'Farro', sans-serif;
+	font-family:$fuente-principal;
 	font-weight: lighter;
 	font-size: 20px;
 }
 a{
 	text-decoration: none;
 	font-size: 15px;
-	color: #fff;
-	font-family:'Farro', sans-serif;
+	color:$blanco;
+	font-family:$fuente-principal;
 }
 a:hover{
 	text-decoration: none;
 	color:currentColor;
 }
 span{
-	font-family:'Farro', sans-serif;
+	font-family:$fuente-principal;
 	font-weight: bold;
 }
 iframe{
 	margin:30px 20px;
-	filter: drop-shadow(4px 4px 2px #000);
+	filter: drop-shadow(6px 6px 3px $negro);
 }
-.boton{
-	width: auto;
-	font-family:'Farro', sans-serif;
-	border-radius: 10px;
-	text-transform:uppercase;
-	background-color:#000;
-	border: 2px solid #ff4700;
-	padding: 5px;
-	filter: drop-shadow(4px 4px 3px #000);
-}
+
 	/*icono whatsapp fixed*/
 .whatsapp{
 	position: fixed;
 	width: 60px;
 	right: 10px;
 	bottom: 10px;
- 	filter: drop-shadow(4px 4px 5px #000);
+ 	filter: drop-shadow(4px 4px 5px $negro);
  	z-index: 10;
 }	
 .p-top{
@@ -90,7 +83,14 @@ iframe{
 		opacity: 1;
 	}
 }
-
+header{
+	z-index: 10;
+	background-color:$gris; 	
+	position: fixed;
+	right: 0;
+	left:0;
+}
 .logo{
-	max-width: 150px;
+	max-width: 160px;
+	margin:0 auto;
 }

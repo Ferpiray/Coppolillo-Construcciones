@@ -7,7 +7,50 @@
 	border-radius: 10%;
 	background-color: rgba(255,255,255,0.6);
 }
-
+.servicio-gas{
+	height: 90vh;
+	background-image: url(../media/gas-mobile.jpg);
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	@media all and(min-width:768px){
+		background-image: url(../media/gas.jpg);
+		height: 92vh;
+	}
+}
+.servicio-agua{
+	height: 90vh;
+	background-image: url(../media/agua-mobile.jpg);
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	@media all and(min-width:768px){
+		background-image: url(../media/agua.jpg);
+		height: 92vh;
+	}
+}
+.servicio-cloacas{
+	height: 90vh;
+	background-image: url(../media/cloacas-mobile.jpg);
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	@media all and(min-width:768px){
+		background-image: url(../media/cloacas.jpg);		
+		height: 92vh;
+	}
+}
+.servicio-suelos{
+	height: 90vh;
+	background-image: url(../media/suelos-mobile.jpg);
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	@media all and(min-width:768px){
+		background-image: url(../media/suelos.jpg);		
+		height: 92vh;
+	}
+}
 ul li.servicio{
 	line-height: 40px;
 	font-family:'Farro', sans-serif;

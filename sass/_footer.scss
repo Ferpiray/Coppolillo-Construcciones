@@ -1,11 +1,10 @@
 footer{
-	    color: #d8511e;
+	    color: $naranja;
 	    text-align: center;
         background-color: $negro;
         ul{
             display: flex;
             flex-direction: column;	
-            border-top: dashed 1px $blanco;
             margin: 0 auto;
             @media all and (min-width: 768px) {
                 border:none;
@@ -24,32 +23,34 @@ footer{
             @media all and (min-width: 1024px){
                 margin:10px 30px;  
             }
+            // a{
+            //     color:$negro;
+            // }
         }
         p{
+            color:$gris;
             margin: 0 auto;
-            font-size: 15px;
-            text-transform: uppercase;
+            font-size: 12px;
             padding:5px;
-            border-top: solid 0.5px $blanco;
-            span{
-                display: block;
-                color: $blanco;
-                @media all and (min-width: 768px){
-                    display: inline;
-                    margin: 2px;
-                    color:#d8511e;
-                } 
+            border-top: 1px solid $blanco;
+            @media all and (min-width:768px){
+                font-size: 15px;
             }
         }
         img{
             width: 30px;
             padding-top: 5px;  
+            padding-bottom: 5px;
+            filter: invert(1);
             }  
-
+            img:hover{
+                border-bottom: 0.5px groove $negro;
+            }
 } //Cierre del Footer
 
 .redesSociales{
 	padding: 10px;
+    background-color: $negro;
     @media all and (min-width: 768px){
         display: flex;
         padding: 20px;
