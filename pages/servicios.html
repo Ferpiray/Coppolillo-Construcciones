@@ -7,9 +7,11 @@
 	<meta name="description" content="Nuestros servicios abarcan la planificación,construcción y extensión de redes de gas,agua y cloacas .Actualmente desarrollamos nuestras actividades en la Provincia de Buenos Aires">
 	<title>Extensión de servicios básicos en La Plata y alrrededores</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../styles/estilos.css">
+	<link rel="preload" as="image" href="../media/gas-mobile.jpg" media="(max-width:768px)">
+	<link rel="preload" as="image" href="../media/gas.jpg" media="(min-width:768px)">
 	<link rel="icon" type="image/png" href="../media/boton-menu.png" sizes="16x16">
 </head>
 <body>
@@ -53,26 +55,26 @@
 	<div class="carousel-inner">
 	  <div class="carousel-item servicio-gas active">
 		<div class="carousel-caption d-md-block">
-		  <h5 class="text-uppercase">Gas natural</h5>
-		  <p>Extensión de redes, gasoductos, estaciones de servicio GNC.</p>
+		  <p class="font-weight-bold text-uppercase">Gas natural</p>
+		  <p class="font-weight-bold">Extensión de redes, gasoductos, estaciones de servicio GNC.</p>
 		</div>
 	  </div>
 	  <div class="carousel-item servicio-agua">
-		<div class="carousel-caption d-md-block">
-		  <h5 class="text-uppercase">Agua potable</h5>
-		  <p>Extensión de redes potables</p>
-		</div>
-	  </div>
-	  <div class="carousel-item servicio-cloacas">
 		<div class="carousel-caption d-md-block text-body">
-		  <h5 class="font-weight-bold text-uppercase">Cloacas</h5>
-		  <p class="font-weight-bold">Extensión de redes cloacales</p>
+		  <p class="font-weight-bold text-uppercase">Agua potable</p>
+		  <p class="font-weight-bold">Extensión de redes potables</p>
 		</div>
 	  </div>
 	  <div class="carousel-item servicio-suelos">
 		<div class="carousel-caption d-md-block">
-		  <h5 class="text-uppercase">Suelos</h5>
-		  <p>Movimientos y zanjeos</p>
+		  <p class="font-weight-bold text-uppercase">Suelos</p>
+		  <p class="font-weight-bold">Movimientos y zanjeos</p>
+		</div>
+	  </div>  
+	  <div class="carousel-item servicio-cloacas">
+		<div class="carousel-caption d-md-block text-body">
+		  <p class="font-weight-bold text-uppercase">Cloacas</p>
+		  <p class="font-weight-bold">Extensión de redes cloacales</p>
 		</div>
 	  </div>
 	</div>
@@ -85,8 +87,34 @@
 	  <span class="sr-only">Next</span>
 	</a>
   </div>
-<a href="https://wa.link/441umh" target="_blank" rel="noopener"><img class="whatsapp" src="../media/whatsapp.png" alt="whatsapp"></a>
 
+<div class="servicios container-fluid text-center py-3 d-flex flex-wrap">
+	<div class="col-12">
+		<h1 class="py-3">Servicios</h1>
+		<p>Desarrollamos nuestras actividades en la Provincia de Buenos Aires.
+			<span class="d-block">Con una basta experiencia en la extensión de servicios básicos, somos la solución que tu proyecto necesita.</span>
+		</p> 
+	</div>
+	<div class="col-12 py-3">
+		<h2 class="pb-2">Medios de pago accesibles y en cuotas</h2>
+		<div class="container-fluid d-flex flex-wrap py-2">
+			<div class="col-sm-12 col-md-4 py-3">
+				<img class="iconos-pagos" src="../media/tarjeta.svg" alt="tarjetas">
+				<p>Tarjetas de crédito o débito</p>
+			</div>
+			<div class="col-sm-12 col-md-4 py-3">
+				<img class="iconos-pagos" src="../media/efectivo.svg" alt="efectivo">
+				<p>Efectivo o transferencia bancaria</p>
+			</div>
+			<div class="col-sm-12 col-md-4 py-3">
+				<img class="iconos-pagos" src="../media/mercado-pago.png" alt="mercado-pago">
+				<p>Ahora también Mercado Pago!</p>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<a href="https://wa.link/441umh" target="_blank" rel="noopener"><img class="whatsapp" src="../media/whatsapp.png" alt="whatsapp"></a>
 
 <footer>
 	<div class="redesSociales">
@@ -104,13 +132,14 @@
 		<div>
 			<ul>
 				<li><a href="../index.html">Home</a></li>
-				<li><a href="servicios.html">Servicios</a></li>						
+				<li><a class="item-activo" href="servicios.html">Servicios</a></li>						
 				<li><a href="nosotros.html">Sobre nosotros</a></li>	
 				<li><a href="contacto.html">Contacto</a></li>	
+				<li><a href="oficina_virtual.html">Oficina Virtual</a></li>
 			</ul>
 		</div>
 	</div>
-	<p>Coppolillo Construcciones - Todos los derechos reservados.</p>
+	<p>Coppolillo Construcciones. <span>&copy 2021</span></p>
 </footer>
 
 	<script src="../Bootstrap/js/jquery.slim.min.js"></script>

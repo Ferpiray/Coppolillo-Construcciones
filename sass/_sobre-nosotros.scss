@@ -1,17 +1,21 @@
 //página sobre nosotros
 .nosotros{
-            min-height: 100vh;
-            background-image: url(../media/obra.jpg);   
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-color: $naranja;
             padding-top: 8rem;
             padding-bottom: 2rem;
+            .nosotros__contenido{
+                padding: 2rem;
+                text-align: center;
+                @media all and(min-width:768px){
+                    padding: 4rem;
+                }
+            }
             h1,h2,h3{
                 font-size: 20px;
-                color:$blanco;
+                color:$blanco;  
             }
             .back{
-                background-color: rgba(0, 0, 0, 0.74);
+                background-color: rgba(0, 0, 0, 0.9);
                 border-radius: 10px;
             }
             p{
@@ -20,7 +24,7 @@
                 span{
                     color:$naranja;
                 } 
-                @media(min-width:768px){
+                @media all and(min-width:768px){
                     font-size: 18px;
                 }
             }

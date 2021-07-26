@@ -17,10 +17,6 @@ h1, h2 {
   font-size: 30px;
 }
 
-h2 {
-  text-transform: uppercase;
-}
-
 h3 {
   font-size: 25px;
 }
@@ -98,7 +94,7 @@ iframe {
 }
 
 header {
-  z-index: 10;
+  z-index: 20;
   background-color: #ececec;
   position: fixed;
   right: 0;
@@ -106,8 +102,28 @@ header {
 }
 
 .logo {
-  max-width: 160px;
-  margin: 0 auto;
+  margin: 10px;
+  max-width: 140px;
+}
+
+@media all and (min-width: 768px) {
+  .logo {
+    max-width: 160px;
+  }
+}
+
+.boton {
+  padding: 5px 10px;
+  font-family: "Farro", sans-serif;
+  width: auto;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.boton:hover {
+  background-color: #1f1c1c;
 }
 
 button:focus {
@@ -160,37 +176,28 @@ button:focus {
 }
 
 .parallax {
-  width: 100%;
   height: 100vh;
   background-image: url(../media/maquina-jcb-mobile.jpg);
-  background-position: center;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  background-position: left;
 }
 
 @media all and (min-width: 768px) {
   .parallax {
     background-image: url(../media/maquina-jcb.jpg);
-    background-position: center;
+    height: 100vh;
   }
 }
 
 .parallax-mapa {
-  width: 100%;
   height: 450px;
   background-image: url(../media/oficina-mobile.jpg);
-  background-position: center;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  width: 100%;
   background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,6 +213,7 @@ button:focus {
 @media all and (min-width: 768px) {
   .parallax-mapa {
     background-image: url(../media/oficina.jpg);
+    height: 500px;
   }
 }
 
@@ -310,12 +318,10 @@ footer img {
   width: 30px;
   padding-top: 5px;
   padding-bottom: 5px;
-  -webkit-filter: invert(1);
-          filter: invert(1);
 }
 
 footer img:hover {
-  border-bottom: 0.5px groove #000;
+  border-bottom: 0.5px groove #d8511e;
 }
 
 .redesSociales {
@@ -349,6 +355,9 @@ footer img:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media all and (min-width: 1024px) {
@@ -357,17 +366,8 @@ footer img:hover {
   }
 }
 
-.servicios {
-  margin: 0 auto;
-  margin-top: 30px;
-  width: 450px;
-  border: 2px solid;
-  border-radius: 10%;
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
 .servicio-gas {
-  height: 90vh;
+  height: 86vh;
   background-image: url(../media/gas-mobile.jpg);
   background-size: cover;
   background-position: center;
@@ -377,12 +377,12 @@ footer img:hover {
 @media all and (min-width: 768px) {
   .servicio-gas {
     background-image: url(../media/gas.jpg);
-    height: 92vh;
+    height: 90vh;
   }
 }
 
 .servicio-agua {
-  height: 90vh;
+  height: 86vh;
   background-image: url(../media/agua-mobile.jpg);
   background-size: cover;
   background-position: center;
@@ -392,12 +392,12 @@ footer img:hover {
 @media all and (min-width: 768px) {
   .servicio-agua {
     background-image: url(../media/agua.jpg);
-    height: 92vh;
+    height: 90vh;
   }
 }
 
 .servicio-cloacas {
-  height: 90vh;
+  height: 86vh;
   background-image: url(../media/cloacas-mobile.jpg);
   background-size: cover;
   background-position: center;
@@ -407,12 +407,12 @@ footer img:hover {
 @media all and (min-width: 768px) {
   .servicio-cloacas {
     background-image: url(../media/cloacas.jpg);
-    height: 92vh;
+    height: 90vh;
   }
 }
 
 .servicio-suelos {
-  height: 90vh;
+  height: 86vh;
   background-image: url(../media/suelos-mobile.jpg);
   background-size: cover;
   background-position: center;
@@ -422,38 +422,53 @@ footer img:hover {
 @media all and (min-width: 768px) {
   .servicio-suelos {
     background-image: url(../media/suelos.jpg);
-    height: 92vh;
+    height: 90vh;
   }
 }
 
-ul li.servicio {
-  line-height: 40px;
-  font-family: 'Farro', sans-serif;
-  font-size: 25px;
-  text-align: center;
-  list-style-type: none;
+.servicios {
+  background-color: #ff672d;
 }
 
-.sombra-img {
-  -webkit-filter: drop-shadow(2px 4px 6px black);
-          filter: drop-shadow(2px 4px 6px black);
-  max-width: 80%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.servicios h1, .servicios h2 {
+  font-size: 20px;
 }
 
-.bg-oscuro {
-  background-color: #000;
+@media all and (min-width: 768px) {
+  .servicios h1, .servicios h2 {
+    font-size: 30px;
+  }
+}
+
+.servicios p {
+  font-size: 16px;
+}
+
+@media all and (min-width: 768px) {
+  .servicios p {
+    font-size: 18px;
+  }
+}
+
+.servicios .iconos-pagos {
+  width: 120px;
 }
 
 .nosotros {
-  min-height: 100vh;
-  background-image: url(../media/obra.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #d8511e;
   padding-top: 8rem;
   padding-bottom: 2rem;
+}
+
+.nosotros .nosotros__contenido {
+  padding: 2rem;
+  text-align: center;
+}
+
+@media all and (min-width: 768px) {
+  .nosotros .nosotros__contenido {
+    padding: 4rem;
+  }
 }
 
 .nosotros h1, .nosotros h2, .nosotros h3 {
@@ -462,7 +477,7 @@ ul li.servicio {
 }
 
 .nosotros .back {
-  background-color: rgba(0, 0, 0, 0.74);
+  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 10px;
 }
 
@@ -475,14 +490,22 @@ ul li.servicio {
   color: #d8511e;
 }
 
-@media (min-width: 768px) {
+@media all and (min-width: 768px) {
   .nosotros p {
     font-size: 18px;
   }
 }
 
+.formulario {
+  background-color: #d8511e;
+}
+
+.textarea-consulta {
+  height: 150px;
+}
+
 .encabezado-home {
-  padding: 6rem 1rem 1rem 1rem;
+  padding: 8rem 1rem 1rem 1rem;
   font: 40px/50px "Farro", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;

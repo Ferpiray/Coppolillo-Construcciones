@@ -1,3 +1,31 @@
+//PALETA DE COLORES
+$naranja: #d8511e;
+$naranja-claro: #ff672d;
+$gris: #ececec;
+$gris_oscuro: #1f1c1c;
+$celeste: #e5ecf4;
+$blanco: #fff;
+$negro: #000;
+
+// FUENTES
+$fuente-principal: 'Farro', sans-serif;
+
+// MIXINS
+
+@mixin background($height, $img, $imgResponsive, $heightResponsive){
+	height: $height;
+	background-image:($img);
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	@media all and(min-width:768px){
+		background-image:($imgResponsive);
+		height: $heightResponsive;
+	}
+}
+
+// IMPORTS
+
 @import url(../Bootstrap/css/bootstrap.min.css);
 @import "globales";
 @import "bootstrap";
@@ -7,3 +35,4 @@
 @import "sobre-nosotros";
 @import "contacto";
 @import "animaciones";
+

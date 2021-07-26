@@ -7,35 +7,16 @@
 }
 
 .parallax{
-	width: 100%;
-	height: 100vh;
-	background-image: url(../media/maquina-jcb-mobile.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	// background-attachment: fixed;
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	@media all and (min-width:768px){
-		background-image: url(../media/maquina-jcb.jpg);
-		background-position: center;
-	}
+	@include background(100vh, url(../media/maquina-jcb-mobile.jpg), url(../media/maquina-jcb.jpg), 100vh);
+	background-position: left;
 }
 .parallax-mapa{
+	@include background(450px, url(../media/oficina-mobile.jpg), url(../media/oficina.jpg), 500px);
 	width: 100%;
-	height: 450px;
-	background-image: url(../media/oficina-mobile.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 	background-attachment: fixed;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	@media all and (min-width:768px) {
-		background-image: url(../media/oficina.jpg);
-	}
 }
 
 .parallax-titulo{
