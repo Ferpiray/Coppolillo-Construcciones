@@ -1,4 +1,4 @@
-
+//CARROUSEL
 
 .servicio-gas{
 	@include background(86vh, url(../media/gas-mobile.jpg), url(../media/gas.jpg), 90vh )	
@@ -13,6 +13,8 @@
 	@include background(86vh, url(../media/suelos-mobile.jpg), url(../media/suelos.jpg), 90vh )	
 }
 
+// SECCION SERVICIOS Y MEDIOS DE PAGO
+
 .servicios{
 	background-color: $naranja-claro;
 	h1,h2{
@@ -26,6 +28,9 @@
 		@media all and(min-width:768px){
 			font-size: 18px;
 		}
+	}
+	.servicios-detalle{
+		border-bottom: solid 1px $blanco;
 	}
 	.iconos-pagos{
 		width: 120px;

@@ -1,6 +1,43 @@
 .formulario{
-    background-color: $naranja;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    background-color: $gris;
+    h1{
+        padding-top: 2rem;
+        padding-bottom: 0.5rem;
+        @media all and(min-width:768px){
+            padding-bottom: 2rem;
+        }
+    }
 }
 .textarea-consulta{
     height: 150px;
+    border-radius: 10px;
+    resize: none;
+    background-color: $negro-transparente;
+    border: transparent;
+    padding:1rem;
+    color: $blanco;
+
+}
+.textarea-consulta:focus{
+    outline: none;
+    background: $negro;
+}
+.correo{
+    padding-bottom: 1rem;
+    max-width: 80%;
+    height:fit-content;
+}
+.input-form{
+    border-radius: 10px;
+    width: 100%;
+    padding: 0.7rem;
+    color: $blanco;
+    background: $negro-transparente;
+    border: transparent;
+}
+.input-form:focus{
+    background: $negro;
+    outline: none;
 }

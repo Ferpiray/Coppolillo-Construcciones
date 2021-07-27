@@ -1,6 +1,7 @@
 //página sobre nosotros
+
 .nosotros{
-            background-color: $naranja;
+            background-color: $celeste;
             padding-top: 8rem;
             padding-bottom: 2rem;
             .nosotros__contenido{
@@ -15,7 +16,7 @@
                 color:$blanco;  
             }
             .back{
-                background-color: rgba(0, 0, 0, 0.9);
+                background-color: $negro-transparente;
                 border-radius: 10px;
             }
             p{
@@ -27,6 +28,5 @@
                 @media all and(min-width:768px){
                     font-size: 18px;
                 }
-            }
-          
+            }         
 }

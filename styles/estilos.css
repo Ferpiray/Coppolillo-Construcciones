@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(../Bootstrap/css/bootstrap.min.css);
 * {
   margin: 0;
@@ -48,6 +47,14 @@ span {
   font-weight: bold;
 }
 
+.p-top {
+  padding-top: 5rem;
+}
+
+.p-top-4 {
+  padding-top: 4rem;
+}
+
 iframe {
   margin: 30px 20px;
   -webkit-filter: drop-shadow(6px 6px 3px #000);
@@ -63,10 +70,6 @@ iframe {
   -webkit-filter: drop-shadow(4px 4px 5px #000);
           filter: drop-shadow(4px 4px 5px #000);
   z-index: 10;
-}
-
-.p-top {
-  padding-top: 5rem;
 }
 
 /*------- ANIMACIONES------ */
@@ -117,12 +120,13 @@ header {
   font-family: "Farro", sans-serif;
   width: auto;
   background-color: #000;
-  color: #fff;
-  border: none;
+  border: solid 1px #000;
   border-radius: 5px;
+  color: #d8511e;
 }
 
 .boton:hover {
+  color: #ff672d;
   background-color: #1f1c1c;
 }
 
@@ -140,20 +144,6 @@ button:focus {
 
 .nav-link:hover {
   color: #d8511e !important;
-}
-
-.card-title {
-  color: #fff;
-}
-
-.card-text {
-  color: #d8511e;
-}
-
-.card--borde {
-  border-radius: 15px;
-  border: 4px solid #000;
-  max-height: 600px;
 }
 
 .btn {
@@ -188,6 +178,12 @@ button:focus {
   .parallax {
     background-image: url(../media/maquina-jcb.jpg);
     height: 100vh;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .parallax {
+    background-position-x: center;
   }
 }
 
@@ -248,8 +244,6 @@ button:focus {
   }
 }
 
-/*-------Acá termina Mobile First------*/
-/*------480px-------*/
 footer {
   color: #d8511e;
   text-align: center;
@@ -450,12 +444,16 @@ footer img:hover {
   }
 }
 
+.servicios .servicios-detalle {
+  border-bottom: solid 1px #fff;
+}
+
 .servicios .iconos-pagos {
   width: 120px;
 }
 
 .nosotros {
-  background-color: #d8511e;
+  background-color: #e5ecf4;
   padding-top: 8rem;
   padding-bottom: 2rem;
 }
@@ -497,11 +495,57 @@ footer img:hover {
 }
 
 .formulario {
-  background-color: #d8511e;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  background-color: #ececec;
+}
+
+.formulario h1 {
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+@media all and (min-width: 768px) {
+  .formulario h1 {
+    padding-bottom: 2rem;
+  }
 }
 
 .textarea-consulta {
   height: 150px;
+  border-radius: 10px;
+  resize: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: transparent;
+  padding: 1rem;
+  color: #fff;
+}
+
+.textarea-consulta:focus {
+  outline: none;
+  background: #000;
+}
+
+.correo {
+  padding-bottom: 1rem;
+  max-width: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.input-form {
+  border-radius: 10px;
+  width: 100%;
+  padding: 0.7rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.9);
+  border: transparent;
+}
+
+.input-form:focus {
+  background: #000;
+  outline: none;
 }
 
 .encabezado-home {

@@ -38,6 +38,12 @@ span{
 	font-family:$fuente-principal;
 	font-weight: bold;
 }
+.p-top{
+	padding-top: 5rem;
+}
+.p-top-4{
+	padding-top: 4rem;
+}
 iframe{
 	margin:30px 20px;
 	filter: drop-shadow(6px 6px 3px $negro);
@@ -52,9 +58,7 @@ iframe{
  	filter: drop-shadow(4px 4px 5px $negro);
  	z-index: 10;
 }	
-.p-top{
-	padding-top: 5rem;
-}
+
 /*------- ANIMACIONES------ */
 
 @keyframes menu {
@@ -87,11 +91,11 @@ header{
 	font-family: $fuente-principal;
 	width: auto;
 	background-color: $negro;
-	color: $blanco;
-	border: none;
+	border: solid 1px $negro;
 	border-radius: 5px;
-	
+	color: $naranja;
 }
 .boton:hover{
+	color:$naranja-claro;
 	background-color: $gris_oscuro;
 }

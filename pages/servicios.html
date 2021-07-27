@@ -12,19 +12,20 @@
 	<link rel="stylesheet" href="../styles/estilos.css">
 	<link rel="preload" as="image" href="../media/gas-mobile.jpg" media="(max-width:768px)">
 	<link rel="preload" as="image" href="../media/gas.jpg" media="(min-width:768px)">
+	<link rel="preload" as="image" href="../media/agua-mobile.jpg" media="(max-width:768px)">
+	<link rel="preload" as="image" href="../media/agua.jpg" media="(min-width:768px)">
 	<link rel="icon" type="image/png" href="../media/boton-menu.png" sizes="16x16">
 </head>
 <body>
-
-<header>
-	<nav class="navbar navbar-expand-lg navbar-light py-0 my-0">
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light py-0 my-0">
 			<a class="navbar-brand" href="../index.html"> <img class="logo" src="../media/logo2.png" alt="logo"> </a>
 			<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
 			</button>
-		  
-			<div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-			 	<ul class="navbar-nav mt-lg-0 ">
+			
+			<div class="collapse navbar-collapse justify-content-end text-center" id="navbarTogglerDemo02">
+				<ul class="navbar-nav mt-lg-0 ">
 					<li class="nav-item">
 						<a class="nav-link" href="../index.html">Home</a>
 					</li>
@@ -40,107 +41,111 @@
 					<li class="nav-item">
 						<a class="nav-link" href="oficina_virtual.html">Oficina virtual</a>
 					</li>
-			 	</ul>
+				</ul>
 			</div>
 		</nav>
-</header>
+	</header>
 
-<div id="carouselExampleCaptions" class="carousel slide carousel-fade p-top my-0" data-ride="carousel">
-	<ol class="carousel-indicators">
-	  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-	  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-	  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-	  <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-	</ol>
-	<div class="carousel-inner">
-	  <div class="carousel-item servicio-gas active">
-		<div class="carousel-caption d-md-block">
-		  <p class="font-weight-bold text-uppercase">Gas natural</p>
-		  <p class="font-weight-bold">Extensión de redes, gasoductos, estaciones de servicio GNC.</p>
-		</div>
-	  </div>
-	  <div class="carousel-item servicio-agua">
-		<div class="carousel-caption d-md-block text-body">
-		  <p class="font-weight-bold text-uppercase">Agua potable</p>
-		  <p class="font-weight-bold">Extensión de redes potables</p>
-		</div>
-	  </div>
-	  <div class="carousel-item servicio-suelos">
-		<div class="carousel-caption d-md-block">
-		  <p class="font-weight-bold text-uppercase">Suelos</p>
-		  <p class="font-weight-bold">Movimientos y zanjeos</p>
-		</div>
-	  </div>  
-	  <div class="carousel-item servicio-cloacas">
-		<div class="carousel-caption d-md-block text-body">
-		  <p class="font-weight-bold text-uppercase">Cloacas</p>
-		  <p class="font-weight-bold">Extensión de redes cloacales</p>
-		</div>
-	  </div>
-	</div>
-	<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	  <span class="sr-only">Previous</span>
-	</a>
-	<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	  <span class="sr-only">Next</span>
-	</a>
-  </div>
+	<!--Inicio carrousel-->
 
-<div class="servicios container-fluid text-center py-3 d-flex flex-wrap">
-	<div class="col-12">
-		<h1 class="py-3">Servicios</h1>
-		<p>Desarrollamos nuestras actividades en la Provincia de Buenos Aires.
-			<span class="d-block">Con una basta experiencia en la extensión de servicios básicos, somos la solución que tu proyecto necesita.</span>
-		</p> 
-	</div>
-	<div class="col-12 py-3">
-		<h2 class="pb-2">Medios de pago accesibles y en cuotas</h2>
-		<div class="container-fluid d-flex flex-wrap py-2">
-			<div class="col-sm-12 col-md-4 py-3">
-				<img class="iconos-pagos" src="../media/tarjeta.svg" alt="tarjetas">
-				<p>Tarjetas de crédito o débito</p>
+	<div id="carouselExampleCaptions" class="carousel slide carousel-fade p-top my-0" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item servicio-gas active">
+				<div class="carousel-caption d-md-block">
+					<p class="font-weight-bold text-uppercase">Gas natural</p>
+					<p>Extensión de redes, gasoductos, estaciones de servicio GNC.</p>
+				</div>
 			</div>
-			<div class="col-sm-12 col-md-4 py-3">
-				<img class="iconos-pagos" src="../media/efectivo.svg" alt="efectivo">
-				<p>Efectivo o transferencia bancaria</p>
+			<div class="carousel-item servicio-agua">
+				<div class="carousel-caption d-md-block text-body">
+					<p class="font-weight-bold text-uppercase">Agua potable</p>
+					<p class="font-weight-bold">Extensión de redes potables</p>
+				</div>
 			</div>
-			<div class="col-sm-12 col-md-4 py-3">
-				<img class="iconos-pagos" src="../media/mercado-pago.png" alt="mercado-pago">
-				<p>Ahora también Mercado Pago!</p>
-			</div>	
+			<div class="carousel-item servicio-suelos">
+				<div class="carousel-caption d-md-block">
+					<p class="font-weight-bold text-uppercase">Suelos</p>
+					<p class="font-weight-bold">Movimientos y zanjeos</p>
+				</div>
+			</div>  
+			<div class="carousel-item servicio-cloacas">
+				<div class="carousel-caption d-md-block text-body">
+					<p class="font-weight-bold text-uppercase">Cloacas</p>
+					<p class="font-weight-bold">Extensión de redes cloacales</p>
+				</div>
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+ 	</div> 
+	 
+	<!-- Cierre carrousel -->
+
+	<div class="servicios container-fluid text-center py-3 d-flex flex-wrap">
+		<div class="servicios-detalle col-12 py-3">
+			<h1 class="pb-3">Servicios</h1>
+			<p>Desarrollamos nuestras actividades en la Provincia de Buenos Aires.
+				<span class="d-block">Con una basta experiencia en la extensión de servicios básicos, somos la solución que tu proyecto necesita.</span>
+			</p> 
+		</div>
+		<div class="col-12 pt-3">
+			<h2 class="pt-3">Medios de pago accesibles y en cuotas</h2>
+			<div class="container-fluid d-flex flex-wrap py-2">
+				<div class="col-sm-12 col-md-4 py-3">
+					<img class="iconos-pagos" src="../media/tarjeta.svg" alt="tarjetas">
+					<p>Tarjetas de crédito o débito</p>
+				</div>
+				<div class="col-sm-12 col-md-4 py-3">
+					<img class="iconos-pagos" src="../media/efectivo.svg" alt="efectivo">
+					<p>Efectivo o transferencia bancaria</p>
+				</div>
+				<div class="col-sm-12 col-md-4 py-3">
+					<img class="iconos-pagos" src="../media/mercado-pago.png" alt="mercado-pago">
+					<p>Ahora también Mercado Pago!</p>
+				</div>	
+			</div>
 		</div>
 	</div>
-</div>
 
-<a href="https://wa.link/441umh" target="_blank" rel="noopener"><img class="whatsapp" src="../media/whatsapp.png" alt="whatsapp"></a>
+	<a href="https://wa.link/441umh" target="_blank" rel="noopener"><img class="whatsapp" src="../media/whatsapp.png" alt="whatsapp"></a>
 
-<footer>
-	<div class="redesSociales">
- 		<div class="redesSociales__iconos">
-		<div class="redesSociales__iconos">
-			<a href="https://www.instagram.com/coppolilloconstrucciones/" target="_blank" rel="noopener"><img src="../media/instagram.svg" alt="instagram"></a>
+	<footer>
+		<div class="redesSociales">
+			<div class="redesSociales__iconos">
+				<div class="redesSociales__iconos">
+					<a href="https://www.instagram.com/coppolilloconstrucciones/" target="_blank" rel="noopener"><img src="../media/instagram.svg" alt="instagram"></a>
+				</div>
+				<div class="redesSociales__iconos">
+					<a href="https://www.facebook.com/CoppolilloConstrucciones/" target="_blank" rel="noopener"><img src="../media/facebook.svg" alt="facebook"></a>
+				</div>
+				<div class="redesSociales__iconos">
+					<a href="mailto:c_c_construcciones@hotmail.com" rel="noopener"><img src="../media/email.svg" alt="email"></a>
+				</div>
+			</div>
+			<div>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a class="item-activo" href="servicios.html">Servicios</a></li>						
+					<li><a href="nosotros.html">Sobre nosotros</a></li>	
+					<li><a href="contacto.html">Contacto</a></li>	
+					<li><a href="oficina_virtual.html">Oficina Virtual</a></li>
+				</ul>
+			</div>
 		</div>
-		<div class="redesSociales__iconos">
-			<a href="https://www.facebook.com/CoppolilloConstrucciones/" target="_blank" rel="noopener"><img src="../media/facebook.svg" alt="facebook"></a>
-		</div>
-		<div class="redesSociales__iconos">
-			<a href="mailto:c_c_construcciones@hotmail.com" rel="noopener"><img src="../media/email.svg" alt="email"></a>
-		</div>
-		</div>
-		<div>
-			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a class="item-activo" href="servicios.html">Servicios</a></li>						
-				<li><a href="nosotros.html">Sobre nosotros</a></li>	
-				<li><a href="contacto.html">Contacto</a></li>	
-				<li><a href="oficina_virtual.html">Oficina Virtual</a></li>
-			</ul>
-		</div>
-	</div>
-	<p>Coppolillo Construcciones. <span>&copy 2021</span></p>
-</footer>
+		<p>Coppolillo Construcciones. <span>&copy 2021</span></p>
+	</footer>
 
 	<script src="../Bootstrap/js/jquery.slim.min.js"></script>
 	<script src="../Bootstrap/js/bootstrap.bundle.min.js"></script>

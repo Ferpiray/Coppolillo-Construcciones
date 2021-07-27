@@ -9,6 +9,9 @@
 .parallax{
 	@include background(100vh, url(../media/maquina-jcb-mobile.jpg), url(../media/maquina-jcb.jpg), 100vh);
 	background-position: left;
+	@media all and(min-width:768px){
+		background-position-x:center ;
+	}
 }
 .parallax-mapa{
 	@include background(450px, url(../media/oficina-mobile.jpg), url(../media/oficina.jpg), 500px);
@@ -43,7 +46,4 @@
 			 height: 400px;
 		 }
     }
-    /*-------Acá termina Mobile First------*/
-        
-        /*------480px-------*/
-    
+   
